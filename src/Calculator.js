@@ -23,13 +23,16 @@ const Calc = () => {
   
     return (
       <div>
+
+        <h1 className='text-center p-2 text-warning'>Calculator App</h1>
+      <div className='m-5 calculator-container'>
   
-      <Container  className="calculator text-center px-2 bg-dark">
+      <Container  className="calculator text-center px-2 py-5 bg-dark">
         <div className="display py-2 mx-0 bg-light">
-          <div className="input">{input}</div>
-          <div className="result">{result}</div>
+          <div className="input text-center">{input}</div>
+          <div className="result text-end p-1">{result}</div>
         </div>
-        <Container>
+        <Container className='py-3'>
         <Row vertical className="buttons">
           <Col sm={12}>
           <button className='btn btn-secondary' onClick={() => handleClick('7')}>7</button>
@@ -41,7 +44,7 @@ const Calc = () => {
           <button className='btn btn-secondary'onClick={() => handleClick('4')}>4</button>
           <button className='btn btn-secondary'onClick={() => handleClick('5')}>5</button>
           <button className='btn btn-secondary'onClick={() => handleClick('6')}>6</button>
-          <button className='btn btn-secondary'onClick={() => handleClick('*')}>*</button>
+          <button className='btn btn-secondary'onClick={() => handleClick('*')}>x</button>
           </Col>
           <Col className='pt-1'sm={12}>
           <button className='btn btn-secondary' onClick={() => handleClick('1')}>1</button>
@@ -61,6 +64,7 @@ const Calc = () => {
         </Row>
       </Container>
       </Container>
+      </div>
       </div>
     );
   };

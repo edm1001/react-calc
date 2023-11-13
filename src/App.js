@@ -1,7 +1,5 @@
 import React from 'react';
 import Calc from'./Calculator.js';
-// make bootstrap changes
-// deploy to github
 
 function App() {
   return (
